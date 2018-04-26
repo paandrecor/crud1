@@ -174,7 +174,7 @@ public class PersonaFrm extends javax.swing.JFrame {
 
     private void btnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarActionPerformed
 Persona per = new Persona();
-per.insertarPersona(Integer.parseInt(txtIdentificacion.getText()),txtNombre.getText(),txtApellido.getText(),txtTelefono.getText(),txtDirrecion.getText());
+per.insertarPersona(0,txtNombre.getText(),txtApellido.getText(),txtTelefono.getText(),txtDirrecion.getText(),Integer.parseInt(txtIdentificacion.getText()));
 
         // TODO add your handling code here:
     }//GEN-LAST:event_btnInsertarActionPerformed
