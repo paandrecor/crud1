@@ -81,6 +81,11 @@ public class PersonaFrm extends javax.swing.JFrame {
         });
 
         btnInsertar.setText("Guardar");
+        btnInsertar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsertarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,6 +171,13 @@ public class PersonaFrm extends javax.swing.JFrame {
     private void txtDirrecionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDirrecionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDirrecionActionPerformed
+
+    private void btnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarActionPerformed
+Persona per = new Persona();
+per.insertarPersona(Integer.parseInt(txtIdentificacion.getText()),txtNombre.getText(),txtApellido.getText(),txtTelefono.getText(),txtDirrecion.getText());
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnInsertarActionPerformed
 
     /**
      * @param args the command line arguments
